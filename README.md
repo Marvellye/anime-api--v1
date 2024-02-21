@@ -3,10 +3,10 @@
 ### Installing
 
 Clone the Repository and run
-
+Strictly for educational purposes only. do not monetise this script!!!
 
 ```
-git clone https://replit.com/@ezekielmarvelly/anime-api?v1
+git clone https://github.com/Marvellye/anime-api--v1
 cd Anime-api
 npm install 
 ```
