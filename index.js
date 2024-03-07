@@ -51,6 +51,20 @@ app.use(express.json());
 app.get('/', (req, res) => {
   res.status(200).json('WORKING');
 });
+app.get('/schedule', async (req, res) => {
+  try {
+    const baseUrl3 = "https://api.anify.tv"; // Example base URL
+    const data = await scrapeSchedule(baseUrl3);
+
+    res.status(200).json(data);
+  } catch (err) {
+    res.status(500).json({
+      status: 500,
+      error: 'Internal Error',
+      message: err,
+    });
+  }
+});
 
 app.get('/search', async (req, res) => {
   try {
