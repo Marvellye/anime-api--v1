@@ -3,6 +3,7 @@ import cors from 'cors';
 import axios from 'axios';
 
 import {
+  scrapeSchedule,
   scrapeGenre,
   scrapeTopAiringAnime,
   scrapeAnimeMovies,
